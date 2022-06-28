@@ -1,3 +1,5 @@
+import pandas as pd
+
 def prepare_sales_data(df):
     df['sale_date'] = pd.to_datetime(df['sale_date'])
     df = df.set_index('sale_date')
